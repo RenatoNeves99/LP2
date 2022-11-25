@@ -3,6 +3,9 @@ public class CadastroPaciente {
 	public static void main(String[] args) {
 		Paciente[] tabela = new Paciente[50];
 		int valor = 0;
+		String name;
+		int cpf;
+		String phone;
 		for(int i = 0; i < 50; i++) {
 			tabela[i] = new Paciente();
 		}
@@ -15,13 +18,15 @@ public class CadastroPaciente {
 				break;
 			}
 			tabela[j].setCodigo(valor);
-			System.out.print("Nome: ");
-			tabela[j].setNome(sc.nextLine());
-			System.out.print("\n");
 			System.out.println("CPF: ");
-			tabela[j].setCpf(sc.nextLine());
+			cpf = sc.nextInt();
+			tabela[j].setCpf(cpf);
+			System.out.println("Nome: ");
+			name = sc.nextLine();
+			tabela[j].setNome(name);
 			System.out.println("Telefone: ");
-			tabela[j].setTelefone(sc.nextLine());
+			phone = sc.nextLine();
+			tabela[j].setTelefone(phone);
 			j++;
 		}
 		j = 0;
