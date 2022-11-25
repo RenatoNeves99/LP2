@@ -1,12 +1,12 @@
 public class Paciente {
 	private int codigo;
 	private String nome;
-	private String cpf;
+	private int cpf;
 	private String telefone;
 	public Paciente() {
 		super();
 	}
-	public Paciente(int codigo, String nome, String cpf, String telefone) {
+	public Paciente(int codigo, String nome, int cpf, String telefone) {
 		super();
 		this.codigo = codigo;
 		this.nome = nome;
@@ -25,10 +25,10 @@ public class Paciente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
+	public int getCpf() {
 		return cpf;
 	}
-	public void setCpf(String cpf) {
+	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
 	public String getTelefone() {
